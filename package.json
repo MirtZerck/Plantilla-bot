@@ -1,0 +1,28 @@
+{
+  "name": "plantilla-bot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/michi.js",
+    "register": "npm run build && node ./dist/commands/slashCommands/registerSlashCommands.js",
+    "dev": "nodemon --watch src/**/*.ts --exec \"node --loader ts-node/esm src/index.ts\"",
+    "dev:build": "nodemon --watch src/**/*.ts --exec \"npm run build && npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
