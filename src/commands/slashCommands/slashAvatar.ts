@@ -1,6 +1,6 @@
 import { SlashCommandBuilder, CommandInteraction, EmbedBuilder, CommandInteractionOptionResolver } from "discord.js";
 import { SlashCommand, CommandCategory } from "../../types/command.js";
-import { getDynamicColor } from "../utils/getDynamicColor.js";
+import { getDynamicColor } from "../../utils/getDynamicColor.js";
 import { CustomImageURLOptions } from "../../types/embeds.js";
 
 export const slashAvatarCommand: SlashCommand = {

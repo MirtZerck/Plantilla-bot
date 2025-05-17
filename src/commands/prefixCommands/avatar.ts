@@ -2,7 +2,7 @@ import { PrefixCommand, CommandCategory } from "../../types/command.js";
 import { EmbedBuilder, Message, TextChannel } from "discord.js";
 import { getMemberByFilter } from "../../constants/getUser.js";
 import { CustomImageURLOptions } from "../../types/embeds.js";
-import { getDynamicColor } from "../utils/getDynamicColor.js";
+import { getDynamicColor } from "../../utils/getDynamicColor.js";
 
 export const userAvatarCommand: PrefixCommand = {
     name: "avatar",

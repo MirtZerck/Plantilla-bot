@@ -1,9 +1,9 @@
 import { PrefixCommand, CommandCategory } from "../../types/command.js";
 import { EmbedBuilder, Message, TextChannel } from "discord.js";
-import { convertDateToString } from "../utils/formatDate.js";
+import { convertDateToString } from "../../utils/formatDate.js";
 import { getMemberByFilter } from "../../constants/getUser.js";
-import { getDynamicColor } from "../utils/getDynamicColor.js";
-import { formatUserRoles } from "../utils/formatUserRoles.js";
+import { getDynamicColor } from "../../utils/getDynamicColor.js";
+import { formatUserRoles } from "../../utils/formatUserRoles.js";
 import { CustomImageURLOptions } from "../../types/embeds.js";
 
 export const userInfoCommand: PrefixCommand = {

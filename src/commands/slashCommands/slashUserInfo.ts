@@ -1,9 +1,9 @@
 import { SlashCommandBuilder, CommandInteraction, EmbedBuilder, CommandInteractionOptionResolver, GuildMember } from "discord.js";
 import { SlashCommand, CommandCategory } from "../../types/command.js";
-import { getDynamicColor } from "../utils/getDynamicColor.js";
+import { getDynamicColor } from "../../utils/getDynamicColor.js";
 import { CustomImageURLOptions } from "../../types/embeds.js";
-import { convertDateToString } from "../utils/formatDate.js";
-import { formatUserRoles } from "../utils/formatUserRoles.js";
+import { convertDateToString } from "../../utils/formatDate.js";
+import { formatUserRoles } from "../../utils/formatUserRoles.js";
 
 export const slashUserInfoCommand: SlashCommand = {
     name: "userinfo",
