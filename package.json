@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/michi.js",
+    "start": "node ./dist/index.js",
     "register": "npm run build && node ./dist/commands/slashCommands/registerSlashCommands.js",
     "dev": "nodemon --watch src/**/*.ts --exec \"node --loader ts-node/esm src/index.ts\"",
     "dev:build": "nodemon --watch src/**/*.ts --exec \"npm run build && npm run start\""
